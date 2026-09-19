@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇿 BZ 01 - xiaohe
+- name: 🇦🇲 AM 01 - xiaohe
   type: vless
-  server: 202.181.177.8
+  server: 84.32.217.120
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇿 BZ 01 - xiaohe
+  - 🇦🇲 AM 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇿 BZ 01 - xiaohe
+  - 🇦🇲 AM 01 - xiaohe
 rules:
 - MATCH,PROXIES
