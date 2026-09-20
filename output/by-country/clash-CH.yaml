@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇭 CH 01 - xiaohe
+  type: vless
+  server: 89.127.196.14
+  port: 443
+  uuid: 70697368-0000-4000-8000-676100000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zzysieoge63.uurot7rjj8.workers.dev
+  network: ws
+  ws-opts:
+    path: /pishgaman-technology
+    headers:
+      Host: zzysieoge63.uurot7rjj8.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇭 CH 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇭 CH 01 - xiaohe
+rules:
+- MATCH,PROXIES
