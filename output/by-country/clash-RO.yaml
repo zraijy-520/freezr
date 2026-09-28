@@ -7,7 +7,7 @@ proxies:
 - name: 🇷🇴 RO 01 - xiaohe
   type: ss
   server: 80.97.27.106
-  port: 116
+  port: 111
   cipher: chacha20-ietf-poly1305
   password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
   udp: true
