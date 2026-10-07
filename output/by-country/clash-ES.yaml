@@ -18,10 +18,10 @@ proxies:
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   type: ss
-  server: 140.174.184.5
+  server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   type: ss
@@ -31,17 +31,12 @@ proxies:
   password: WSyL4XTwNsdv
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  type: vless
-  server: es4.h1cloud.net
-  port: 25047
-  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
