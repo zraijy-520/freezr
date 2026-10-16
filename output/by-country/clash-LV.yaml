@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: 104.18.155.229
+  server: cdn.topingr.ir
   port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: cdn.topingr.ir
   network: ws
   ws-opts:
-    path: /au-do
+    path: /gropcdn
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: cdn.topingr.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 rules:
 - MATCH,PROXIES
