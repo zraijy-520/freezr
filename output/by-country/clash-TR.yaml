@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
@@ -32,18 +32,6 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  type: vless
   server: 177.3.208.65
   port: 443
   uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
@@ -56,6 +44,18 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   type: vless
   server: 155.103.71.142
@@ -67,7 +67,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
