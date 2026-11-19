@@ -14,30 +14,19 @@ proxies:
   skip-cert-verify: true
   servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  type: vless
-  server: 46.247.109.32
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: K41mxSIT1WcM8QEiZQxs7n_qOroaPucFMHamzWICKVQ
-  servername: graff.cosmograff.com
-  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
   type: vless
   server: 87.248.149.50
@@ -48,12 +37,18 @@ proxies:
   skip-cert-verify: true
   servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: ss
-  server: 130.61.145.251
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uou5NTq+xna9PBIG+8jtSSyQ6idxiXZgeK+Uw52qopY=
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 06 - xiaohe
   type: ss
   server: 185.176.204.18
@@ -63,24 +58,24 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
   type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
 - name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
   type: ss
   server: 47.85.162.44
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 10 - xiaohe
   type: vless
@@ -96,30 +91,18 @@ proxies:
   client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 11 - xiaohe
   type: vless
-  server: 68.183.72.92
+  server: 194.60.228.97
   port: 443
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v1-24z.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v1-24z.pages.dev
+  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
   type: vless
   server: 57.129.41.216
   port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
   udp: true
   tls: false
   skip-cert-verify: true
@@ -128,30 +111,7 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  type: ss
-  server: 47.254.143.251
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
   type: vless
   server: 57.129.41.216
   port: 80
@@ -164,7 +124,29 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
   type: vless
   server: 57.129.41.216
   port: 80
@@ -177,40 +159,46 @@ proxies:
     path: /vless/
     headers:
       Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
   type: vless
-  server: 104.27.109.16
+  server: harbor.gerqix.online
   port: 443
-  uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
+  servername: harbor.gerqix.online
   network: ws
   ws-opts:
-    path: /vl/43gYvFJEPmUtPFSZ?ed=2560
+    path: /api/de1/stream
     headers:
-      Host: jldmwa9cfrug7b03cr1vs.pages.dev
+      Host: harbor.gerqix.online
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  type: ss
+  server: 47.85.162.44
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
 - name: 🇩🇪 德国 (Germany) 20 - xiaohe
   type: ss
   server: 193.108.119.3
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  type: ss
-  server: 47.85.162.44
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -237,8 +225,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 18 - xiaohe
   - 🇩🇪 德国 (Germany) 19 - xiaohe
   - 🇩🇪 德国 (Germany) 20 - xiaohe
-  - 🇩🇪 德国 (Germany) 21 - xiaohe
-  - 🇩🇪 德国 (Germany) 22 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -264,7 +250,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 18 - xiaohe
   - 🇩🇪 德国 (Germany) 19 - xiaohe
   - 🇩🇪 德国 (Germany) 20 - xiaohe
-  - 🇩🇪 德国 (Germany) 21 - xiaohe
-  - 🇩🇪 德国 (Germany) 22 - xiaohe
 rules:
 - MATCH,PROXIES
