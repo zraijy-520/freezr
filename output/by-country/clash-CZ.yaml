@@ -11,33 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
   udp: true
-- name: 🇨🇿 CZ 02 - xiaohe
-  type: vless
-  server: 104.18.79.242
-  port: 443
-  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
-  network: ws
-  ws-opts:
-    path: /11290579a72cdb4e?ed=2560
-    headers:
-      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
