@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 144.31.3.89
+  server: 144.31.4.18
   port: 443
   uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: clearingmatch.melodramaonline.net
+  servername: marginbirch.cleanfoodshop.org
   network: ws
   ws-opts:
     path: /media/ws/
     headers:
-      Host: 144.31.3.89
+      Host: 144.31.4.18
 proxy-groups:
 - name: PROXIES
   type: select
